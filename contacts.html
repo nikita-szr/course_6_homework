@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Contacts</title>
+    <style>
+        .sidebar {
+            min-height: 100vh;
+            background-color: grey;
+            padding-top: 20px;
+        }
+        .sidebar .nav-link {
+            color: white;
+        }
+        .sidebar .nav-link.active {
+            background-color: #007bff;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- боковая -->
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <h2>Меню</h2>
+                <a href="#">Главная</a>
+                <a href="#">Категории</a>
+                <a href="#">Заказы</a>
+                <a href="#">Контакты</a>
+                <div class="profile-links">
+                    <a href="#">Профиль</a>
+                    <a href="#">Выход</a>
+                </div>
+            </nav>
+            <!-- главная -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 content">
+                <h1 class="header">Контакты</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Имя</label>
+                                <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Почта</label>
+                                <input type="email" class="form-control" id="email" placeholder="Введите вашу почту">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Введите ваше сообщение"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Наши контакты</h5>
+                        <p>Описание контактов</p>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
